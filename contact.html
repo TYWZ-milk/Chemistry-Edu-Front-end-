@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+		<head>
+				<meta charset="utf-8" />
+				
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+				
+				<title>sc.chinaz.com</title>
+				
+				<!-- Mobile viewport optimized: h5bp.com/viewport -->
+				<meta name="viewport" content="width=device-width" />
+				
+				<!-- Style Sheet-->
+				<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css' />
+				<link rel="stylesheet" href="css/style.css" />
+				
+				<!-- favicon -->
+				<link rel="shortcut icon" href="/favicon.ico" />
+				
+				<!--[if lt IE 9]>
+						<script src="js/html5.js"></script>				
+				<![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+		<body>				
+			
+			<div class="container clearfix">
+			
+				<!--SIDEBAR-->
+				<aside id="sidebar">
+				
+					<!--logo-->
+					<a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+					
+					<!--main-menu-->
+					<nav class="main-nav">
+						<ul>
+							<li><a href="index.html">HOMEPAGE</a></li>
+							<li><a href="about.html">ABOUT US</a></li>
+							<li><a href="gallery.html">GALLERY</a></li>
+							<li><a href="blog.html">BLOG</a>
+							</li>
+							<li><a href="#">FEATURES</a>
+									<ul>
+											<li><a href="shortcodes.html">Shortcodes</a></li>
+											<li><a href="404.html">404 Page</a></li>
+									</ul>
+							</li>
+							<li class="active"><a href="contact.html">CONTACT US</a></li>
+						</ul>
+					</nav>
+					
+					<!--social-navigatoin-->
+					<ul class="social-nav clearfix">
+							<li><a class="fb" href="#">&nbsp;</a></li>
+							<li><a class="tw" href="#">&nbsp;</a></li>
+							<li><a class="rss" href="#">&nbsp;</a></li>
+							<li><a class="bh" href="#">&nbsp;</a></li>
+							<li><a class="db" href="#">&nbsp;</a></li>
+					</ul>
+				
+				</aside>
+				
+				
+				
+				<!--CONTENT-->
+				<section id="content">
+					
+						<!--header-->
+						<header>
+						
+								<h2>Contact Us <span> - Subtitle goes here.</span></h2>
+								
+								<form id="search-form" method="post" />
+										<input type="text" placeholder="Search Here" value="" />
+								</form>
+						
+						</header>
+						
+						<!--content-->
+						<article class="contact-page">
+						
+								<div id="map_canvas"></div>
+								
+								<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=&sensor=false"></script>
+											
+								<script type="text/javascript">
+								// GOOGLE-MAP	
+								function initialize() {
+									  var myOptions = {
+										center: new google.maps.LatLng(-37.812327,144.96917),
+										zoom: 14,
+										scrollwheel: false,
+										mapTypeId: google.maps.MapTypeId.ROADMAP
+									  };
+									  var map = new google.maps.Map(document.getElementById("map_canvas"),
+										  myOptions);
+									}
+								
+								initialize();
+								</script>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut dui tortor, vitae semper justo. Suspendisse sed erat at sapien faucibus sagittis a vel leo. Donec scelerisque luctus eros, a facilisis dolor porttitor at. Mauris massa purus, vehicula eu cursus eu, commodo in nisl. Sed sollicitudin, libero non pharetra suscipit, magna velit euismod metus, et iaculis sapien elit eu erat. Quisque sed ante a tortor pulvinar venenatis non a mauris. Cras mattis mollis dui sed molestie. Aliquam blandit sodales imperdiet. Sed rutrum rutrum est id faucibus. Sed cursus nulla ut odio sollicitudin eget accumsan nulla accumsan. Donec volutpat turpis non felis ultrices at condimentum nisi pellentesque. Donec hendrerit congue ornare. Pellentesque fermentum porttitor lobortis.</p>
+								
+								<div id="comment-form">
+										
+										<h3>CONTACT US</h3>
+										<form method="post" action="#" />
+										
+												<input type="text" name="name" placeholder="Name(required)" />
+												
+												<input type="text" name="email" placeholder="Email(required)" />
+												
+												<input type="text" name="url" placeholder="Website(optional)" />
+												
+												<textarea cols="5" rows="5" name="comment" placeholder="Your Comment(required)"></textarea>
+												
+												<input type="submit" name="submit" value="Comment" />
+										
+										</form>
+								</div>
+								
+						</article>						
+						
+				</section>
+			
+			</div>
+							
+				
+				<!-- jQuery -->
+				<script src="js/jquery-1.7.1.min.js"></script>
+				<script src="js/jquery.cycle.all.js"></script>
+				<script src="js/tabs-accordian.js"></script>				
+				
+				<!-- Custom JS -->
+				<script src="js/custom.js"></script>		
+		<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
