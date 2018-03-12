@@ -212,10 +212,10 @@ a:hover, a:active { outline: 0; }
 	
 	
 /**BLOG**/
-#blog .blog-content { width:470px; background: #ffffff; padding:20px; float: left; }
+#blog .blog-content { width:955px; background: #ffffff; padding:20px; float: left; }
 #blog .blog-content article  { margin: 0px 0px 20px; padding: 0px 0px 20px; border-bottom: 1px solid #eeeeee; }
 #blog .blog-content figure { width: 200px; float: left; margin-right: 20px; }
-#blog .blog-content article div { width: 300px; float: right; }
+#blog .blog-content article div { width: 770px; float: right; }
 #blog .blog-content article h3 a{ color: #121212; }
 #blog .blog-content article h3{ font: normal 22px "Dosis"; margin: -5px 0px 15px; }
 #blog .blog-content article h3:hover a { color: #ff5b5b; }
