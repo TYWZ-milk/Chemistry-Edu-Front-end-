@@ -5,6 +5,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/molecules.css">
+
 	<script src="js/molecules.min.js"></script>
 	<script src="js/d3.min.js"></script>
 </head>
@@ -28,11 +29,13 @@
 	}
 
 	#wrapper {
+		background-color:white;
+		float:right;
 		position: relative;
 		min-width: 200px;
 		min-height: 300px;
-		width: 98%;
-		height: 98%;
+		width: 80%;
+		height: 108%;
 		margin: auto;
 		padding: 0px;
 		border: 0px solid #999;
@@ -310,7 +313,47 @@
 </style>
 
 <body>
+<!--SIDEBAR-->
+<aside id="sidebars">
 
+	<!--logo-->
+	<a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+
+	<!--main-menu-->
+	<nav class="main-nav">
+		<ul>
+			<li><a href="index.html">HOMEPAGE</a></li>
+			<li><a href="about.html">ABOUT US</a></li>
+			<li><a href="shortcodes.html">GALLERY</a></li>
+			<li><a href="blog.html">BLOG</a></li>
+			<li class="active"><a href="#">FEATURES</a>
+				<ul>
+					<li><a href="chemicaltable.html">化学元素周期表</a></li>
+					<li><a href="molecules.html">分子结构图</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">CONTACT US</a></li>
+		</ul>
+	</nav>
+
+	<!--social-navigatoin-->
+	<ul class="social-nav clearfix">
+		<li><a class="fb" href="#">&nbsp;</a></li>
+		<li><a class="tw" href="#">&nbsp;</a></li>
+		<li><a class="rss" href="#">&nbsp;</a></li>
+		<li><a class="bh" href="#">&nbsp;</a></li>
+		<li><a class="db" href="#">&nbsp;</a></li>
+	</ul>
+
+</aside>
+<div id="content">
+<!--header-->
+<header style="left:-15px;width:1010px;">
+
+	<h2>分子结构图  <span> - 分子结构涉及原子在空间中的位置，与键结的化学键种类有关，包括键长、键角以及相邻三个键之间的二面角。</span></h2>
+
+</header>
+</div>
 <div id="wrapper">
 
 	<div id="header">
@@ -319,7 +362,7 @@
 			<input type="text" required value="CC(N)CC=O" onpaste="parseInput(this.value)" onkeyup="keyboardCallback(event)">
 			<span class="highlight"></span>
 			<span class="bar"></span>
-			<label id="textbox">Input SMILES notation...</label>
+			<label id="textbox">请输入分子名称</label>
 		</div></form></div>
 
 		<div id="examples">

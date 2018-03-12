@@ -6,7 +6,7 @@
  
  
  /**	CSS RESET (http://meyerweb.com/eric/tools/css/reset/) **/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {	margin: 0; 	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header,  menu, nav, output, ruby, section, summary, time, mark, audio, video {	margin: 0; 	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
 article, aside, details, figcaption, figure, footer, header,  menu, nav, section { display: block; }
 body { line-height: 1;}
 ol, ul { list-style: none;}
@@ -43,31 +43,31 @@ a:hover, a:active { outline: 0; }
 	
 	
 	
-/** SIDEBAR **/
-#sidebar { min-height: 720px; width:250px; float: left; border-left: 5px solid #fff; background:url(../images/sidebar-bg.png); position: relative; }
-#sidebar .logo { display:block; margin: 77px 0px 50px 28px; width: 149px; height: 49px; }
-#sidebar .main-nav > ul > li { position: relative; color: #e5e5e5; padding-left: 33px; font: bold 14px 'Dosis'; line-height: 42px; letter-spacing: 2px; }
-#sidebar .main-nav > ul { margin-left: -5px; }
-#sidebar .main-nav > ul > li a { color: #6a6a6a; display: inline-block; width: 100%; height: 100%; }
-#sidebar .main-nav > ul > li:hover,
-#sidebar .main-nav > ul > li.active { background: #111011; border-left: 5px solid #ff5b5b; border-bottom: 1px solid #212021; padding-left: 28px; }
-#sidebar .main-nav > ul > li:hover > a,
-#sidebar .main-nav > ul > li.active > a { color: #fff; } 
+/** sidebars **/
+#sidebars { min-height: 720px; width:250px; float: left; border-left: 5px solid #fff; background:url(../images/sidebar-bg.png); position: relative; }
+#sidebars .logo { display:block; margin: 77px 0px 50px 28px; width: 149px; height: 49px; }
+#sidebars .main-nav > ul > li { position: relative; color: #e5e5e5; padding-left: 33px; font: bold 14px 'Dosis'; line-height: 42px; letter-spacing: 2px; }
+#sidebars .main-nav > ul { margin-left: -5px; }
+#sidebars .main-nav > ul > li a { color: #6a6a6a; display: inline-block; width: 100%; height: 100%; }
+#sidebars .main-nav > ul > li:hover,
+#sidebars .main-nav > ul > li.active { background: #111011; border-left: 5px solid #ff5b5b; border-bottom: 1px solid #212021; padding-left: 28px; }
+#sidebars .main-nav > ul > li:hover > a,
+#sidebars .main-nav > ul > li.active > a { color: #fff; }
 
-#sidebar .main-nav > ul > li ul { display: none; position: absolute; left: 250px; top: 0px; width: 250px; background:url(../images/sidebar-bg.png); z-index: 9999; }
-#sidebar .main-nav > ul > li ul li { padding-left: 28px; }
-#sidebar .main-nav > ul > li:hover ul { display: block; }
-#sidebar .main-nav > ul > li ul li:hover { background: #111011; }
-#sidebar .main-nav > ul > li ul li:hover a { color: #fff; }
+#sidebars .main-nav > ul > li ul { display: none; position: absolute; left: 250px; top: 0px; width: 250px; background:url(../images/sidebar-bg.png); z-index: 9999; }
+#sidebars .main-nav > ul > li ul li { padding-left: 28px; }
+#sidebars .main-nav > ul > li:hover ul { display: block; }
+#sidebars .main-nav > ul > li ul li:hover { background: #111011; }
+#sidebars .main-nav > ul > li ul li:hover a { color: #fff; }
 
-#sidebar .social-nav { position: absolute; bottom: 28px; left: 28px; }
-#sidebar .social-nav li { float: left; margin: 0px 5px 0px 0px; }
-#sidebar .social-nav li a { display: block; width: 30px; height: 28px; }
-#sidebar .social-nav li a.fb { background: url(../images/social-icons.png) left center no-repeat; }
-#sidebar .social-nav li a.tw { background: url(../images/social-icons.png) -35px center no-repeat; }
-#sidebar .social-nav li a.rss { background: url(../images/social-icons.png) -70px center no-repeat; }
-#sidebar .social-nav li a.bh { background: url(../images/social-icons.png) -105px center no-repeat; }
-#sidebar .social-nav li a.db { background: url(../images/social-icons.png) right center no-repeat; }
+#sidebars .social-nav { position: absolute; bottom: 28px; left: 28px; }
+#sidebars .social-nav li { float: left; margin: 0px 5px 0px 0px; }
+#sidebars .social-nav li a { display: block; width: 30px; height: 28px; }
+#sidebars .social-nav li a.fb { background: url(../images/social-icons.png) left center no-repeat; }
+#sidebars .social-nav li a.tw { background: url(../images/social-icons.png) -35px center no-repeat; }
+#sidebars .social-nav li a.rss { background: url(../images/social-icons.png) -70px center no-repeat; }
+#sidebars .social-nav li a.bh { background: url(../images/social-icons.png) -105px center no-repeat; }
+#sidebars .social-nav li a.db { background: url(../images/social-icons.png) right center no-repeat; }
 	
 	
 
