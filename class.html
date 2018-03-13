@@ -28,7 +28,7 @@
 
 <div class="container clearfix">
 
-    <!--sidebars-->
+    <!--SIDEBAR-->
     <aside id="sidebars">
 
         <!--logo-->
@@ -38,7 +38,7 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">首页</a></li>
-                <li><a href="class.html">课程信息</a></li>
+                <li class="active"><a href="class.html">课程信息</a></li>
                 <li><a href="calendar.html">课程安排</a></li>
                 <li><a href="ppt.html">上课课件</a></li>
                 <li><a href="blog.html">课外学习资料</a>
@@ -49,7 +49,7 @@
                         <li><a href="molecules.html">分子结构图</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="discuss.html">讨论区</a></li>
+                <li><a href="discuss.html">讨论区</a></li>
             </ul>
         </nav>
 
@@ -68,15 +68,12 @@
 
     <!--CONTENT-->
     <section id="content">
-
         <!--header-->
         <header>
 
-            <h2>发表新帖子 <span> - 对学习中遇到的问题进行讨论</span></h2>
+            <h2>课程信息 <span> - 课程具体信息</span></h2>
 
         </header>
-
-
         <!--BLOG-->
         <section id="blog" class="clearfix">
 
@@ -85,21 +82,35 @@
 
                 <div id="comment-form">
 
-                    <form method="post" action="#" />
-                    <h3 style="margin-top: 10px;">文章标题</h3>
-                    <input type="text" name="name" placeholder="输入文章内容" />
+                    <h3 style="margin-top: 10px;">课程序号</h3>
+                    <h4>SB123456</h4>
 
-                    <h3 style="margin-top: 10px;">上传图片</h3>
-                    <img id="preview">
-                    <label for="imgPicker"><img style="width:110px;" src="images/uploadPic.png"></label>
-                    <input type="file" id="imgPicker" />
+                    <h3 style="margin-top: -70px;margin-left: 400px;">课程名称</h3>
+                    <h4 style="margin-left: 400px;">健身教练了解一下</h4>
 
-                    <h3 style="margin-top: 30px;">文章内容</h3>
-                    <textarea cols="5" rows="5" name="comment" placeholder="输入文章内容"></textarea>
+                    <h3 style="margin-top: 10px;">教师</h3>
+                    <h4>小煤球</h4>
 
-                    <input type="submit" name="submit" value="发表" />
+                    <h3 style="margin-top: -70px;margin-left: 400px;">教师联系方式</h3>
+                    <h4 style="margin-left: 400px;">1243567890</h4>
 
-                    </form>
+                    <h3 style="margin-top: 10px;">必修/选修</h3>
+                    <h4>必修</h4>
+
+                    <h3 style="margin-top: -70px;margin-left: 400px;">考试/考查</h3>
+                    <h4 style="margin-left: 400px;">考查</h4>
+
+                    <h3 style="margin-top: 10px;">课程教材</h3>
+                    <h4>入党教材</h4>
+
+                    <h3 style="margin-top: -70px;margin-left: 400px;">上课安排</h3>
+                    <h4 style="margin-left: 400px;">周一十三十四节 济事楼666</h4>
+
+                    <h3 style="margin-top: 10px;">课程简述</h3>
+                    <h4>阿里金额发两件事代发户大V哈O王嘉尔发是劳动法花开见色放hi阿us好的佛阿斯加德你发朴素的分红啊收到货阿什顿发哈两棵树的你疯啦上课交的符号是的合法骚的符号是的发哈师大发斯蒂芬as阿什顿发</h4>
+
+                    <h3 style="margin-top: 10px;">同班同学</h3>
+                    <h4>阿里金额发两件事代发户大V哈O王嘉</h4>
                 </div>
             </div>
 
@@ -149,33 +160,10 @@
             </aside>-->
 
         </section>
-
     </section>
 
 </div>
-<script>document
-        .querySelector('#imgPicker')
-        .addEventListener('change', function(){
-            //当没选中图片时，清除预览
-            if(this.files.length === 0){
-                document.querySelector('#preview').src = '';
-                return;
-            }
 
-            //实例化一个FileReader
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                //当reader加载时，把图片的内容赋值给
-                var image = document.querySelector('#preview');
-                image.src = e.target.result;
-                image.style="width:180px;height:180px";
-
-            };
-
-            //读取选中的图片，并转换成dataURL格式
-            reader.readAsDataURL(this.files[0]);
-        }, false);</script>
 
 <!-- jQuery -->
 <script src="js/jquery-1.7.1.min.js"></script>
