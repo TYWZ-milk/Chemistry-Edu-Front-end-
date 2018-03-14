@@ -111,6 +111,7 @@
                             <th>教师</th>
                             <th>课程教材</th>
                             <th>上课安排</th>
+                            <th>课程选择</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -122,8 +123,10 @@
                             <td>Row 1 Data 2</td>
                             <td>Row 1 Data 2</td>
                             <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
                         </tr>
                         <tr>
+                            <td>Row 1 Data 2</td>
                             <td>Row 1 Data 2</td>
                             <td>Row 1 Data 2</td>
                             <td>Row 1 Data 2</td>
@@ -166,6 +169,16 @@
                 {data: "runTime",width:'10%'},
                 {data: "publisher"}
             ],*/
+            "columnDefs" : [ {
+// 定义操作列,######以下是重点########
+                "targets" : 7,//操作按钮目标列
+                "data" : null,
+                "render" : function(data, type,row) {
+                    var id = '"' + row.id + '"';
+                    var html = "<a href='class.html'  class='delete btn btn-default btn-xs'  ><i class='fa fa-times'></i> 更换至该课程</a>"
+                    return html;
+                }
+            } ],
             "bProcessing": true,
             "bPaginage": true,
             "sPaginationType": "full_numbers",
