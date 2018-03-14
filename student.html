@@ -23,12 +23,26 @@
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
     <![endif]-->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        #new{
+            border: 1px solid #ce3d3d;
+            cursor: pointer;
+            background: #ff5b5b;
+            height: 30px;
+            min-width: 110px;
+            color: #fff;
+            font: normal 12px Arial;
+            float: right;
+            margin-top: -50px;
+        }
+
+    </style></head>
 <body>
 
 <div class="container clearfix">
 
-    <!--sidebars-->
+    <!--SIDEBAR-->
     <aside id="sidebars">
 
         <!--logo-->
@@ -49,8 +63,8 @@
                         <li><a href="molecules.html">分子结构图</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="discuss.html">讨论区</a></li>
-                <li><a href="student.html">个人信息</a></li>
+                <li><a href="discuss.html">讨论区</a></li>
+                <li class="active"><a href="student.html">个人信息</a></li>
             </ul>
         </nav>
 
@@ -69,15 +83,12 @@
 
     <!--CONTENT-->
     <section id="content">
-
         <!--header-->
         <header>
 
-            <h2>发表新帖子 <span> - 对学习中遇到的问题进行讨论</span></h2>
-
+            <h2>个人信息 <span> - 个人信息查看</span></h2>
+            <input id="new" type="button" name="submit" onclick="location.href='editInfo.html'" value="个人信息编辑" />
         </header>
-
-
         <!--BLOG-->
         <section id="blog" class="clearfix">
 
@@ -86,21 +97,30 @@
 
                 <div id="comment-form">
 
-                    <form method="post" action="#" />
-                    <h3 style="margin-top: 10px;">文章标题</h3>
-                    <input type="text" name="name" placeholder="输入文章内容" />
+                    <h3 style="margin-top: 10px">头像</h3>
+                    <img src="images/li_bg.png" style="height:200px;width:200px;">
 
-                    <h3 style="margin-top: 10px;">上传图片</h3>
-                    <img id="preview">
-                    <label for="imgPicker"><img style="width:110px;" src="images/uploadPic.png"></label>
-                    <input type="file" id="imgPicker" />
+                    <h3 style="margin-top: 10px;">学号</h3>
+                    <h4>SB123456</h4>
 
-                    <h3 style="margin-top: 30px;">文章内容</h3>
-                    <textarea cols="5" rows="5" name="comment" placeholder="输入文章内容"></textarea>
+                    <h3 style="margin-top: -70px;margin-left: 400px;">姓名</h3>
+                    <h4 style="margin-left: 400px;">健身教练了解一下</h4>
 
-                    <input type="submit" name="submit" value="发表" />
+                    <h3 style="margin-top: 10px;">年级</h3>
+                    <h4>SB123456</h4>
 
-                    </form>
+                    <h3 style="margin-top: -70px;margin-left: 400px;">专业</h3>
+                    <h4 style="margin-left: 400px;">健身教练了解一下</h4>
+
+                    <h3 style="margin-top: 10px;">所在课程序号</h3>
+                    <h4>小煤球</h4>
+
+                    <h3 style="margin-top: -70px;margin-left: 400px;">所在班级名称</h3>
+                    <h4 style="margin-left: 400px;">1243567890</h4>
+
+                    <h3 style="margin-top: 10px;">个人简介</h3>
+                    <h4>阿里金额发两件事代发户大V哈O王嘉尔发是劳动法花开见色放hi阿us好的佛阿斯加德你发朴素的分红啊收到货阿什顿发哈两棵树的你疯啦上课交的符号是的合法骚的符号是的发哈师大发斯蒂芬as阿什顿发</h4>
+
                 </div>
             </div>
 
@@ -150,33 +170,10 @@
             </aside>-->
 
         </section>
-
     </section>
 
 </div>
-<script>document
-        .querySelector('#imgPicker')
-        .addEventListener('change', function(){
-            //当没选中图片时，清除预览
-            if(this.files.length === 0){
-                document.querySelector('#preview').src = '';
-                return;
-            }
 
-            //实例化一个FileReader
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                //当reader加载时，把图片的内容赋值给
-                var image = document.querySelector('#preview');
-                image.src = e.target.result;
-                image.style="width:180px;height:180px";
-
-            };
-
-            //读取选中的图片，并转换成dataURL格式
-            reader.readAsDataURL(this.files[0]);
-        }, false);</script>
 
 <!-- jQuery -->
 <script src="js/jquery-1.7.1.min.js"></script>

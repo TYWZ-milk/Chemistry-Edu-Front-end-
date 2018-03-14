@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Style Sheet-->
-    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css' />
+
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- favicon -->
@@ -23,7 +23,20 @@
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
     <![endif]-->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        #new{
+            border: 1px solid #ce3d3d;
+            cursor: pointer;
+            background: #ff5b5b;
+            height: 30px;
+            min-width: 110px;
+            color: #fff;
+            font: normal 12px Arial;
+            float: right;
+            margin-top: -50px;
+        }
+    </style></head>
 <body>
 
 <div class="container clearfix">
@@ -32,7 +45,7 @@
     <aside id="sidebars">
 
         <!--logo-->
-        <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+        <div class="commentAvatarDiv"><img class="commentAvatarImage" src="images/image_3.jpg"></div>
 
         <!--main-menu-->
         <nav class="main-nav">
@@ -50,6 +63,7 @@
                     </ul>
                 </li>
                 <li><a href="discuss.html">讨论区</a></li>
+                <li><a href="student.html">个人信息</a></li>
             </ul>
         </nav>
 
@@ -72,7 +86,7 @@
         <header>
 
             <h2>课程信息 <span> - 课程具体信息</span></h2>
-
+            <input id="new" type="button" onclick="location.href='changeClass.html'" name="submit" value="更换课程" />
         </header>
         <!--BLOG-->
         <section id="blog" class="clearfix">

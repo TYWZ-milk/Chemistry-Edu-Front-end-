@@ -49,8 +49,8 @@
                         <li><a href="molecules.html">分子结构图</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="discuss.html">讨论区</a></li>
-                <li><a href="student.html">个人信息</a></li>
+                <li><a href="discuss.html">讨论区</a></li>
+                <li class="active"><a href="student.html">个人信息</a></li>
             </ul>
         </nav>
 
@@ -73,7 +73,7 @@
         <!--header-->
         <header>
 
-            <h2>发表新帖子 <span> - 对学习中遇到的问题进行讨论</span></h2>
+            <h2>编辑个人信息 <span> - 修改并保存个人信息</span></h2>
 
         </header>
 
@@ -87,18 +87,28 @@
                 <div id="comment-form">
 
                     <form method="post" action="#" />
-                    <h3 style="margin-top: 10px;">文章标题</h3>
-                    <input type="text" name="name" placeholder="输入文章内容" />
-
-                    <h3 style="margin-top: 10px;">上传图片</h3>
+                    <h3>头像</h3>
                     <img id="preview">
                     <label for="imgPicker"><img style="width:110px;" src="images/uploadPic.png"></label>
                     <input type="file" id="imgPicker" />
 
-                    <h3 style="margin-top: 30px;">文章内容</h3>
-                    <textarea cols="5" rows="5" name="comment" placeholder="输入文章内容"></textarea>
+                    <h3 style="margin-top: 10px;">姓名</h3>
+                    <input type="text" name="name" placeholder="输入姓名" />
 
-                    <input type="submit" name="submit" value="发表" />
+                    <h3 style="margin-top: -100px;margin-left: 400px;">学号/教职工号</h3>
+                    <input type="text" name="name" placeholder="输入学号" style="margin-left: 400px;" />
+
+                    <h3>专业</h3>
+                    <input type="text" name="name" placeholder="输入专业" />
+
+                    <h3 style="margin-top: -100px;margin-left: 400px;">年级</h3>
+                    <input type="text" name="name" placeholder="输入年级" style="margin-left: 400px;" />
+
+
+                    <h3>个人简介</h3>
+                    <textarea cols="5" rows="5" name="comment" placeholder="输入个人简介"></textarea>
+
+                    <input type="submit" name="submit" value="保存" />
 
                     </form>
                 </div>
@@ -170,7 +180,7 @@
                 //当reader加载时，把图片的内容赋值给
                 var image = document.querySelector('#preview');
                 image.src = e.target.result;
-                image.style="width:180px;height:180px";
+                image.style="width:120px;height:120px";
 
             };
 
