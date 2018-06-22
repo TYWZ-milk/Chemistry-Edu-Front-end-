@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
 	<link rel="stylesheet" href="css/style.css" />
@@ -29,14 +32,11 @@
 	}
 
 	#wrapper {
-		left: -85px;
 		background-color:white;
-		float:right;
+		float:left;
 		position: relative;
-		min-width: 200px;
-		min-height: 300px;
-		width: 75%;
-		height: 108%;
+        width: 100%;
+        height: 640px;
 		margin: auto;
 		padding: 0px;
 		border: 0px solid #999;
@@ -315,94 +315,96 @@
 
 <body>
 <!--SIDEBAR-->
-<aside id="sidebars">
+<div class="container clearfix">
+	<aside id="sidebars">
 
-	<!--logo-->
-	<div class="commentAvatarDiv"><img class="commentAvatarImage" src="images/image_3.jpg"></div>
+		<!--logo-->
+		<div class="commentAvatarDiv"><img class="commentAvatarImage" src="images/image_3.jpg"></div>
 
-	<!--main-menu-->
-	<nav class="main-nav">
-		<ul>
-			<li><a href="index.html">首页</a></li>
-			<li><a href="class.html">课程信息</a></li>
-			<li><a href="calendar.html">课程安排</a></li>
-			<li><a href="ppt.html">上课课件</a></li>
-			<li><a href="blog.html">课外学习资料</a></li>
-			<li class="active"><a href="#">元素分子图</a>
-				<ul>
-					<li><a href="chemicaltable.html">化学元素周期表</a></li>
-					<li><a href="molecules.html">分子结构图</a></li>
-				</ul>
-			</li>
-			<li><a href="discuss.html">讨论区</a></li>
-			<li><a href="student.html">个人信息</a></li>
+		<!--main-menu-->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="class.html">课程信息</a></li>
+				<li><a href="calendar.html">课程安排</a></li>
+				<li><a href="ppt.html">上课课件</a></li>
+				<li><a href="blog.html">课外学习资料</a></li>
+				<li class="active"><a href="#">元素分子图</a>
+					<ul>
+						<li><a href="chemicaltable.html">化学元素周期表</a></li>
+						<li><a href="molecules.html">分子结构图</a></li>
+					</ul>
+				</li>
+				<li><a href="discuss.html">讨论区</a></li>
+				<li><a href="student.html">个人信息</a></li>
+			</ul>
+		</nav>
+
+		<!--social-navigatoin-->
+		<ul class="social-nav clearfix">
+			<li><a class="fb" href="#">&nbsp;</a></li>
+			<li><a class="tw" href="#">&nbsp;</a></li>
+			<li><a class="rss" href="#">&nbsp;</a></li>
+			<li><a class="bh" href="#">&nbsp;</a></li>
+			<li><a class="db" href="#">&nbsp;</a></li>
 		</ul>
-	</nav>
 
-	<!--social-navigatoin-->
-	<ul class="social-nav clearfix">
-		<li><a class="fb" href="#">&nbsp;</a></li>
-		<li><a class="tw" href="#">&nbsp;</a></li>
-		<li><a class="rss" href="#">&nbsp;</a></li>
-		<li><a class="bh" href="#">&nbsp;</a></li>
-		<li><a class="db" href="#">&nbsp;</a></li>
-	</ul>
+	</aside>
+	<section id="content">
+	<!--header-->
+	<header>
 
-</aside>
-<div id="content">
-<!--header-->
-<header style="left:-98px;width:1010px;">
+		<h2>分子结构图  <span> - 分子结构涉及原子在空间中的位置，与键结的化学键种类有关，包括键长、键角以及相邻三个键之间的二面角。</span></h2>
 
-	<h2>分子结构图  <span> - 分子结构涉及原子在空间中的位置，与键结的化学键种类有关，包括键长、键角以及相邻三个键之间的二面角。</span></h2>
+	</header>
 
-</header>
+	<div id="wrapper">
+
+		<div id="header">
+
+			<div id="user-input"><form onsubmit="return false"><div id="user" class="group">
+				<input type="text" required value="CC(N)CC=O" onpaste="parseInput(this.value)" onkeyup="keyboardCallback(event)">
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label id="textbox">请输入分子名称</label>
+			</div></form></div>
+
+			<div id="examples">
+				<p class="examples"><i>examples:&nbsp</i>
+					<a href="#" onclick="parseInput('NC(CCC(N)=O)C(O)=O')">glutamine</a>,
+					<a href="#" onclick="parseInput('c1ccccc1')">benzene</a>,
+					<a href="#" onclick="parseInput('O[C@H]1[C@H](O)[C@H](O[C@]1(O)CO)CO')">fructose</a>,
+					<a href="#" onclick="parseInput('C=C(C)C=C')">isoprene</a>,
+					<a href="#" onclick="parseInput('CCO')">ethanol</a>,
+					<a href="#" onclick="parseInput('C#N')">cyanide</a>,
+					<a href="#" onclick="parseInput(randomMolecule[Math.floor(Math.random()*randomMolecule.length)])">random</a>
+				</p>
+			</div>
+
+		</div>
+
+		<div id="content-main">
+
+			<div id="plot"></div>
+
+			<div id="sidebar">
+				<section><div id="formatOptions"></div></section>
+			</div>
+
+		</div>
+
+		<div id="footer">
+
+			<div id="content-info">
+				<other><div id="molecularFormula"></div></other>
+				<other><div id="molecularWeight"></div></other>
+			</div>
+
+		</div>
+
+	</div>
+    </section>
 </div>
-<div id="wrapper">
-
-	<div id="header">
-
-		<div id="user-input"><form onsubmit="return false"><div id="user" class="group">
-			<input type="text" required value="CC(N)CC=O" onpaste="parseInput(this.value)" onkeyup="keyboardCallback(event)">
-			<span class="highlight"></span>
-			<span class="bar"></span>
-			<label id="textbox">请输入分子名称</label>
-		</div></form></div>
-
-		<div id="examples">
-			<p class="examples"><i>examples:&nbsp</i>
-				<a href="#" onclick="parseInput('NC(CCC(N)=O)C(O)=O')">glutamine</a>,
-				<a href="#" onclick="parseInput('c1ccccc1')">benzene</a>,
-				<a href="#" onclick="parseInput('O[C@H]1[C@H](O)[C@H](O[C@]1(O)CO)CO')">fructose</a>,
-				<a href="#" onclick="parseInput('C=C(C)C=C')">isoprene</a>,
-				<a href="#" onclick="parseInput('CCO')">ethanol</a>,
-				<a href="#" onclick="parseInput('C#N')">cyanide</a>,
-				<a href="#" onclick="parseInput(randomMolecule[Math.floor(Math.random()*randomMolecule.length)])">random</a>
-			</p>
-		</div>
-
-	</div>
-
-	<div id="content-main">
-
-		<div id="plot"></div>
-
-		<div id="sidebar">
-			<section><div id="formatOptions"></div></section>
-		</div>
-
-	</div>
-
-	<div id="footer">
-
-		<div id="content-info">
-			<other><div id="molecularFormula"></div></other>
-			<other><div id="molecularWeight"></div></other>
-		</div>
-
-	</div>
-
-</div>
-
 </body>
 
 <script>
@@ -1004,3 +1006,4 @@
 	];
 
 </script>
+</html>

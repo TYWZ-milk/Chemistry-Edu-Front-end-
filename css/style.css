@@ -287,6 +287,19 @@ a:hover, a:active { outline: 0; }
 	
 	
 /**COMMENTSFORM**/
+.comment-form {    margin: 0px 0px 5px;
+	padding: 10px;
+	border: 1px solid gainsboro;
+}
+.comment-form h3 { color: #ff5b5b; font: 200 16px "Dosis"; margin: 0px 0px 20px; }
+.comment-form h4 {  color: dimgrey; font: 200 16px "Dosis"; margin: -10px 0px 20px; }
+.comment-form input[type="text"] { width: 180px; height: 20px; padding: 10px; border: 1px solid #e3e3e3; border-bottom-width: 2px; margin: 0px 15px 15px 0px; font: normal 12px Arial; line-height: 20px; }
+.comment-form textarea { width: 100%; height: 130px; padding: 10px 5px; border: 1px solid #e3e3e3; border-bottom-width: 2px; margin: 0px 15px 15px 0px; font: normal 12px Arial; line-height: 20px ;resize: none; }
+.comment-form input[type="submit"] { border: 1px solid #ce3d3d; cursor: pointer; background: #ff5b5b; height: 30px; min-width: 110px; color: #fff; font: normal 12px Arial; }
+.comment-form input[type="button"] { border: 1px solid #ce3d3d; cursor: pointer; background: #ff5b5b; height: 30px; min-width: 110px; color: #fff; font: normal 12px Arial; }
+.comment-form input[type="file"] { display:none;border: 1px solid #ce3d3d; cursor: pointer; background: #ff5b5b; height: 30px; min-width: 110px; color: #fff; font: normal 12px Arial; }
+
+/**COMMENTSFORM**/
 #comment-form { margin: 0px 0px 20px; }
 #comment-form h3 { color: #ff5b5b; font: 200 16px "Dosis"; margin: 0px 0px 20px; }
 #comment-form h4 {  color: dimgrey; font: 200 16px "Dosis"; margin: -10px 0px 20px; }
@@ -295,7 +308,6 @@ a:hover, a:active { outline: 0; }
 #comment-form input[type="submit"] { border: 1px solid #ce3d3d; cursor: pointer; background: #ff5b5b; height: 30px; min-width: 110px; color: #fff; font: normal 12px Arial; }
 #comment-form input[type="button"] { border: 1px solid #ce3d3d; cursor: pointer; background: #ff5b5b; height: 30px; min-width: 110px; color: #fff; font: normal 12px Arial; }
 #comment-form input[type="file"] { display:none;border: 1px solid #ce3d3d; cursor: pointer; background: #ff5b5b; height: 30px; min-width: 110px; color: #fff; font: normal 12px Arial; }
-
 	
 /**CONTACTUS**/
 #map_canvas { width: 100%; height: 400px; margin: 0px 0px 20px; }
